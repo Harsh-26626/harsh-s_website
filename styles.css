@@ -110,7 +110,7 @@ body {
         top: 50px;
         left: 10%;
         width: 80vw;
-        max-height: 30vh;
+        max-height: 10vh;
         background-color: rgba(255, 255, 255, 0.085);
         backdrop-filter: blur(10px);
         border-radius: 20px;
