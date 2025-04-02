@@ -118,4 +118,30 @@ body {
         margin-bottom: 50px;
     }
 
+    #content-left {
+        position: relative;
+        left: 10%;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        width: 30%;
+    }
+    
+    #content-left p {
+        padding: 0%;
+        margin: 0%;
+        font-family: "Gloria Hallelujah", cursive;
+        font-weight: 510;
+        font-style: normal;
+        font-size: 12vh;
+        font-size: 5vw;
+    }
+    
+    #content-right {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 50%;
+        padding-top: 7vh;
+        padding-bottom: 7vh;
+    }
 }
