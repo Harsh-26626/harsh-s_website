@@ -6,10 +6,10 @@ body {
 
 #content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     position: relative;
     top: 50px;
-    left: 10%;
     width: 80vw;
     max-height: 100vh;
     background-color: rgba(255, 255, 255, 0.085);
@@ -101,5 +101,19 @@ body {
         background-image: url("images/indexbg.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    #content {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 50px;
+        width: 80vw;
+        max-height: 30vh;
+        background-color: rgba(255, 255, 255, 0.085);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        color: white;
+        margin-bottom: 50px;
     }
 }
