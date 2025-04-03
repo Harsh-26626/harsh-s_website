@@ -126,7 +126,7 @@ body {
     #content-left {
         position: relative;
         left: 0%;
-        margin: auto;
+        margin-left: 10%;
         width: 30vw;
         padding-top: 5vh;
     }
