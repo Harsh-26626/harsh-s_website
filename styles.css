@@ -191,9 +191,6 @@ body {
 }
 
 @media only screen and (max-width: 390px){
-    #content {
-        height: 65vh;
-    }
 
     #hello {
         font-size: 7vw;
