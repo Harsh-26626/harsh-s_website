@@ -92,7 +92,7 @@ body {
 }
 
 #hp2 {
-    width: 25%;
+    width: 35vw;
 }
 
 @media only screen and (max-width: 768px){
@@ -110,7 +110,7 @@ body {
         top: 50px;
         left: 10%;
         width: 80vw;
-        max-height: 100vh;
+        height: 100vh;
         background-color: rgba(255, 255, 255, 0.085);
         backdrop-filter: blur(10px);
         border-radius: 20px;
@@ -148,10 +148,40 @@ body {
     }
 
     #content-right img {
-        width: 40vw;
+        width: 44vw;
         margin: auto;
         border-radius: 30px;
         box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
         filter: brightness(0.9);
+    }
+
+    .header-parts {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #hp1 {
+        margin: auto;
+    }
+
+    #hp1 p {
+        font-family: "Shadows Into Light", cursive;
+        font-size: 20px;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        padding: 0%;
+        margin-top: -5px;
+    }
+    
+    #hp2 {
+        display: none;
+        width: 35vw;
+    }
+}
+
+@media only screen and (max-width: 435px){
+    #content {
+        height: 55vh;
     }
 }
