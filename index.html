@@ -40,9 +40,10 @@
             </div>
     </body>
     <script>
-        const header_elements = document.getElementsByClassName("header-elements");
+        var header_elements = document.getElementsByClassName("header-elements");
 
-        for (let i = 0; i< header_elements.length; i++) {
+        function headerStarter (){
+            for (let i = 0; i< header_elements.length; i++) {
             header_elements[i].addEventListener("click", function() {
                 window.location.href = header_elements[i].innerText.toLowerCase() + ".html";
                 console.log(header_elements[i].innerText.toLowerCase() + ".html");
@@ -53,7 +54,10 @@
             header_elements[i].addEventListener("mouseout", function(){
                 this.style.cursor = "default";
             });
-        }
+        };
+        };
+
+        headerStarter();
 
         if (window.innerWidth < 768) {
             document.getElementById("hp2").innerHTML = 
@@ -90,6 +94,8 @@
             `   <p class="header-elements">Resume</p>
                 <p class="header-elements">Projects</p>
                 <p class="header-elements">To Be Decided</p>`;
+            header_elements = document.getElementsByClassName("header-elements");
+            headerStarter();
         }
 
         function menuClosed() {
