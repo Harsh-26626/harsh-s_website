@@ -29,8 +29,8 @@ body {
 #content-left p {
     padding: 0%;
     margin: 0%;
-    font-family: "Gloria Hallelujah", cursive;
-    font-weight: 400;
+    font-family: "Gloria Hallelujah", monospace;
+    font-weight: 510;
     font-style: normal;
     font-size: 12vh;
     font-size: 5vw;
@@ -70,7 +70,7 @@ body {
     color : white;
     font-size: 17px;
     font-weight: 400;
-    font-family: "Shadows Into Light", cursive;
+    font-family: "Shadows Into Light", monospace;
     font-style: normal;
     text-decoration: none;
     padding: 0%;
@@ -82,7 +82,7 @@ body {
 }
 
 #hp1 p {
-    font-family: "Shadows Into Light", cursive;
+    font-family: "Shadows Into Light", monospace;
     font-size: 20px;
     font-weight: 400;
     font-style: normal;
@@ -129,7 +129,7 @@ body {
     #content-left p {
         padding: 0%;
         margin: 0%;
-        font-family: "Gloria Hallelujah";
+        font-family: "Gloria Hallelujah", monospace;
         font-weight: 510;
         font-style: normal;
         font-size: 20vh;
@@ -165,7 +165,7 @@ body {
     }
 
     #hp1 p {
-        font-family: "Shadows Into Light";
+        font-family: "Shadows Into Light", monospace;
         font-size: 20px;
         font-weight: 400;
         font-style: normal;
@@ -177,5 +177,11 @@ body {
     #hp2 {
         display: none;
         width: 35vw;
+    }
+}
+
+@media only screen and (max-width: 435px){
+    #content {
+        height: 63vh;
     }
 }
