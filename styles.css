@@ -161,6 +161,7 @@ body {
 
     #header {
         transition: height 0.5s;
+        justify-content: space-evenly;
     }
 
     #temp {
