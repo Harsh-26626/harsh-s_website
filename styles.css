@@ -26,7 +26,7 @@ body {
     width: 30vw;
 }
 
-#content-left p {
+#harsh {
     padding: 0%;
     margin: 0%;
     font-family: "Gloria Hallelujah", monospace;
@@ -95,6 +95,11 @@ body {
     width: 35vw;
 }
 
+#hello {
+    font-size: 3vw;
+    font-weight: 400;
+}
+
 @media only screen and (max-width: 768px){
     body {
         background-image: url("images/indexbg.jpg");
@@ -126,7 +131,7 @@ body {
         padding-top: 5vh;
     }
     
-    #content-left p {
+    #harsh{
         padding: 0%;
         margin: 0%;
         font-family: "Gloria Hallelujah", monospace;
@@ -178,10 +183,24 @@ body {
         display: none;
         width: 35vw;
     }
+
+    #hello {
+        font-size: 5vw;
+        font-weight: 400;
+    }
 }
 
-@media only screen and (max-width: 435px){
+@media only screen and (max-width: 390px){
     #content {
-        height: 63vh;
+        height: 65vh;
+    }
+
+    #hello {
+        font-size: 7vw;
+        font-weight: 400;
+    }
+    #harsh{
+        font-size: 25vh;
+        font-size: 14vw;
     }
 }
