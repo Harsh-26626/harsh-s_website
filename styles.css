@@ -192,6 +192,14 @@ body {
 
 @media only screen and (max-width: 390px){
 
+    #content-left {
+        position: relative;
+        left: 0%;
+        margin-left: 10%;
+        width: 30vw;
+        padding-top: 5vh;
+    }
+
     #hello {
         font-size: 7vw;
         font-weight: 400;
