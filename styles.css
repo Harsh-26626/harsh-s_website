@@ -179,9 +179,3 @@ body {
         width: 35vw;
     }
 }
-
-@media only screen and (max-width: 435px){
-    #content {
-        height: 63vh;
-    }
-}
