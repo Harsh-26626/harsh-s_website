@@ -256,7 +256,7 @@ body {
 
     #hp1 p {
         font-size: 5vh;
-        margin-top: -5px;
+        margin-top: -1.7vw;
     }
     
     #hp2 {
@@ -275,20 +275,20 @@ body {
 
     .about-me-parts {
         margin-bottom: 10px;
-        height: 70vw;
-        width: 70vw;
+        height: 80vw;
+        width: 80vw;
     }
 
     .info-heading {
-        font-size: 15vw;
+        font-size: 17vw;
     }
 
     .info-text {
-        font-size: 3.1vw;
+        font-size: 3.5vw;
     }
 
     .info-text-social {
-        font-size: 6vw;
+        font-size: 8vw;
     }
 }
 
