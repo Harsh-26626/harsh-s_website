@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bonheur+Royale&family=Gloria+Hallelujah&family=Shadows+Into+Light&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
-    background-image: url("images/indexbg.jpg");
+    background-image: url("images/indexbglong.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -8,7 +10,7 @@ body {
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: 50px;
+    margin-top: 50px;
     left: 10%;
     width: 80vw;
     background-color: rgba(255, 255, 255, 0.085);
@@ -58,7 +60,7 @@ body {
     padding: 20px;
     text-align: center;
     width: 100%;
-    height: 8vh;
+    height: 9vh;
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.085);
     backdrop-filter: blur(10px);
@@ -66,7 +68,7 @@ body {
     border-bottom-right-radius: 20px;
 }
 
-#temp {
+#header-div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -74,9 +76,10 @@ body {
 
 .header-elements {
     color : white;
-    font-size: 17px;
+    font-size: 3vh;
     font-weight: 400;
-    font-family: "Shadows Into Light", monospace;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.2vw;
     font-style: normal;
     text-decoration: none;
     padding: 0%;
@@ -88,13 +91,14 @@ body {
 }
 
 #hp1 p {
-    font-family: "Shadows Into Light", monospace;
-    font-size: 20px;
+    color : white;
+    font-size: 3.2vh;
     font-weight: 400;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.2vw;
     font-style: normal;
-    color: white;
+    text-decoration: none;
     padding: 0%;
-    margin-top: -5px;
 }
 
 #hp2 {
@@ -102,8 +106,10 @@ body {
 }
 
 #hello {
-    font-size: 3vw;
-    font-weight: 400;
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 510;
+    font-style: normal;
+    font-size: 2.5vw;
 }
 
 .menu {
@@ -129,26 +135,70 @@ body {
     transform: translate(0, -11px) rotate(45deg);
   }
 
+#about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.about-me-parts {
+    display: flex;
+    flex-direction: column;
+    height: 27.5vw;
+    width: 27.5vw;
+    background-color: rgba(255, 255, 255, 0.085);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.info-heading {
+    color: white;
+    text-align: center;
+    margin-top: 2vw;
+    font-family: "Bonheur Royale", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vw;
+}
+
+.info-link {
+    text-decoration: none;
+    color: white;
+}
+
+.info-text {
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.195vw;
+    color: white;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.info-text-social {
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    text-align: center;
+}
+
 @media only screen and (max-width: 768px){
-    body {
-        background-image: url("images/indexbg.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
 
     #content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         position: relative;
-        top: 50px;
         left: 10%;
         width: 80vw;
-        background-color: rgba(255, 255, 255, 0.085);
-        backdrop-filter: blur(10px);
-        border-radius: 20px;
-        color: white;
-        margin-bottom: 50px;
     }
 
     #content-left {
@@ -158,24 +208,8 @@ body {
         width: 30vw;
         padding-top: 5vh;
     }
-
-    #header {
-        transition: height 0.5s;
-        justify-content: space-evenly;
-    }
-
-    #temp {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-    }
     
     #harsh{
-        padding: 0%;
-        margin: 0%;
-        font-family: "Gloria Hallelujah", monospace;
-        font-weight: 510;
-        font-style: normal;
         font-size: 20vh;
         font-size: 9vw;
     }
@@ -194,14 +228,23 @@ body {
     #content-right img {
         width: 44vw;
         margin: auto;
-        border-radius: 30px;
-        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
-        filter: brightness(0.9);
     }
 
-    .header-parts {
+    #header {
+        transition: height 0.5s;
+        justify-content: space-evenly;
+        height: 12vh;
+    }
+
+    #header-div {
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .header-elements {
+        font-size: 3vh;
+        margin-top: 2vh;
     }
 
     #hp1 {
@@ -212,12 +255,7 @@ body {
     }
 
     #hp1 p {
-        font-family: "Shadows Into Light", monospace;
-        font-size: 20px;
-        font-weight: 400;
-        font-style: normal;
-        color: white;
-        padding: 0%;
+        font-size: 5vh;
         margin-top: -5px;
     }
     
@@ -228,6 +266,29 @@ body {
     #hello {
         font-size: 5vw;
         font-weight: 400;
+    }
+
+    #about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me-parts {
+        margin-bottom: 10px;
+        height: 70vw;
+        width: 70vw;
+    }
+
+    .info-heading {
+        font-size: 15vw;
+    }
+
+    .info-text {
+        font-size: 3.1vw;
+    }
+
+    .info-text-social {
+        font-size: 6vw;
     }
 }
 
