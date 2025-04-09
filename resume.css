@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+#main {
+    display: flex;
+}
+
+#left-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #212842;
+    width: 50%;
+}
+
+#main-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #e6d7c4;
+    width: 50%;
+}
+
+#left-section-name {
+    color: #e6d7c4;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 190%;
+}
+
+#resume-photo {
+    width: 25vw;
+    align-self: center;
+    border-radius: 40px;
+}
+
+.left-section-headings {
+    color: #e6d7c4;
+    text-align: center;
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 190%;
+    margin-top: 10px;
+}
+
+.left-section-name {
+    display: list-item;
+    color: #e6d7c4;
+    margin-left: 10%;
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.left-section-description {
+    color: #e6d7c4;
+    margin-left: 6.8vw;
+    margin-right: 10%;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120%;
+}
+
+.left-section-text {
+    color: #e6d7c4;
+    text-decoration: none;
+    margin-bottom: 2px;
+    margin-left: 2vw;
+    font-size: 120%;
+}
+
+#profile-summary {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.right-section-headings {
+    color: #212842;
+    text-align: center;
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 190%;
+    margin-top: 10px;
+}
+
+#profile-summary-text {
+    color: #212842;
+    display: flex;
+    text-align: center;
+    align-self: flex-end;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.right-section-name {
+    display: list-item;
+    color: #212842;
+    margin-left: 10%;
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.right-section-description {
+    color: #212842;
+    margin-left: 6.8vw;
+    margin-right: 10%;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120%;
+}
+
+@media only screen and (max-width: 768px){
+    #main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #left-section {
+        width: 100%;
+    }
+
+    #main-section {
+        width: 100%;
+    }
+
+    #resume-photo {
+        width: 50vw;
+    }
+}
