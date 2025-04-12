@@ -217,7 +217,7 @@ body {
     }
 
     .box-close-description {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .box-open-heading {
@@ -229,7 +229,7 @@ body {
         margin-left: 5%;
         margin-right: 5%;
         text-align: center;
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .box-open-main {
