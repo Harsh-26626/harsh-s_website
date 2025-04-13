@@ -1,10 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&family=Special+Gothic+Expanded+One&family=Bebas+Neue&family=Bonheur+Royale&family=Gloria+Hallelujah&family=Shadows+Into+Light&display=swap');
 
 body {
     background-image: url("images/projectbg.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+#header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    height: 9vh;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.085);
+    backdrop-filter: blur(10px);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: none;
+}
+
+#header-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-elements {
+    color : white;
+    font-size: 3vh;
+    font-weight: 400;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.2vw;
+    font-style: normal;
+    text-decoration: none;
+    padding: 0%;
+}
+
+.header-parts {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hp1 p {
+    color : white;
+    font-size: 3.2vh;
+    font-weight: 400;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.2vw;
+    font-style: normal;
+    text-decoration: none;
+    padding: 0%;
+}
+
+#hp2 {
+    width: 25vw;
+}
+
+.menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
 
 #projects {
     font-size: 5vw;
@@ -195,6 +270,44 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+
+
+    #header {
+        transition: height 0.5s;
+        justify-content: space-evenly;
+        height: 12vh;
+    }
+
+    #header-div {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .header-elements {
+        font-size: 3vh;
+        margin-top: 2vh;
+    }
+
+    #hp1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
+
+    #hp1 p {
+        font-size: 5vh;
+        margin-top: -1.7vw;
+    }
+    
+    #hp2 {
+        margin-left: auto;
+    }
+
+    .menu {
+        margin-left: auto;
+    }
 
     #projects {
         font-size: 12vw;

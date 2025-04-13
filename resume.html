@@ -14,8 +14,21 @@
     </head>
 
     <body>
+
         <div id="main">
             <div id="left-section">
+                <div id="header" style="border-bottom-left-radius: 20px;">
+                    <div id="header-div">
+                        <div class="header-parts" id="hp1">
+                            <p>Resume</p>
+                        </div>
+                        <div class="header-parts" id="hp22">
+                        </div>
+                        <div id="hp3">
+            
+                        </div>
+                    </div>
+                </div>
                 <p id="left-section-name">Harsh Ahuja</p>
                 <hr style="border: 1px solid #e6d7c4; width: 90%; align-self: center;">
                 <img src="images/harsh-resume-photo.jpg" id="resume-photo">
@@ -41,6 +54,14 @@
 
             </div>
             <div id="main-section">
+                <div id="header2" style="border-bottom-right-radius: 20px;">
+                    <div id="header-div" style="justify-content: end;">
+                        <div class="header-parts" id="hp2">
+                            <p class="header-elements">Home</p>
+                            <p class="header-elements">Projects</p>
+                        </div>
+                    </div>
+                </div>
                 <div id="profile-summary">
                     <p style="margin-top: 20px;" class="right-section-headings">Running on iced coffee and low key brilliance.</p>
                     <p id="profile-summary-text">Developer with a focus on building practical, user-centered applications. Worked on projects like Readlytic, a community app for book lovers, and a mobile security app that detects intruders and sends real-time email alerts. Comfortable with HTML, CSS, JavaScript, Node.js, and tools like FlutterFlow. Passionate about solving real-world problems through simple, effective tech.</p>
@@ -90,4 +111,79 @@
             </div>
         </div>
     </body>
+
+    <script>
+        // Working of Header
+
+        var header_elements = document.getElementsByClassName("header-elements");
+
+        function headerStarter (){
+            for (let i = 0; i< header_elements.length; i++) {
+            header_elements[i].addEventListener("click", function() {
+                window.location.href = header_elements[i].innerText.toLowerCase() + ".html";
+                console.log(header_elements[i].innerText.toLowerCase() + ".html");
+            });
+            header_elements[i].addEventListener("mouseover", function(){
+                this.style.cursor = "pointer";
+            });
+            header_elements[i].addEventListener("mouseout", function(){
+                this.style.cursor = "default";
+            });
+            if (window.innerWidth < 768) {
+                header_elements[i].style.color = "#e6d7c4";
+            }
+            else {
+                header_elements[i].style.color = "#212842";
+            }
+        };
+        };
+
+        headerStarter();
+
+        if (window.innerWidth < 768) {
+            document.getElementById("header2").style.display = "none";
+            document.getElementById("hp22").innerHTML = 
+            `<div class ="menu" onclick ="openMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>`;
+            
+            document.getElementById("hp22").style.width = "auto";
+            document.getElementById("hp22").style.marginTop = "-5px";
+        }
+
+        let menu = "close";
+        
+        function openMenu(x) {
+        x.classList.toggle("change");
+        if (menu == "close") {
+            document.getElementById("header").style.height = "32vh";
+            menu = "open";
+            menuOpened()
+        }
+        else if (menu == "open") {
+            document.getElementById("header").style.height = "12vh";
+            menu = "close";
+            menuClosed()
+        }
+        else {
+            console.log("Error in menu function");
+        }
+
+        function menuOpened() {
+            document.getElementById("hp3").innerHTML = 
+            `   <p class="header-elements">Home</p>
+                <p class="header-elements">Projects</p>`;
+            header_elements = document.getElementsByClassName("header-elements");
+            headerStarter();
+        }
+
+        function menuClosed() {
+            document.getElementById("hp3").innerHTML = 
+            ``;
+        }
+}
+
+    </script>
 </html>
