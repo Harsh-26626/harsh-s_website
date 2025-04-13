@@ -114,6 +114,7 @@ body {
     flex-direction: column;
     width: 80%;
     text-align: center;
+    position: relative;
 }
 
 .box-open {
@@ -269,6 +270,39 @@ body {
     margin-bottom: 2vw;
 }
 
+.view-more-box {    
+    border-radius: 20px;
+    white-space: nowrap;
+    width: 10vw;
+    background-color: rgba(255, 255, 255, 0.085);
+    backdrop-filter: blur(10px);
+    height: 2vw;
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+    margin-bottom: 1vw;
+}
+
+.view-more-text {
+    text-align: center;
+    margin: auto;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3vw;
+}
+
+.arrow-down {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-bottom: 0.5vw;
+}
+
 @media only screen and (max-width: 768px) {
 
 
@@ -392,5 +426,14 @@ body {
     .team-img {
         width: 60vw;
         margin-bottom: 5vw;
+    }
+    .view-more-box {
+        width: 40vw;
+        height: 5vw;
+        margin-bottom: 3vw;
+    }
+
+    .view-more-text {
+        font-size: 3vw;
     }
 }
