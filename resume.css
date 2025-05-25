@@ -169,6 +169,14 @@
     font-size: 120%;
 }
 
+.right-section-text {
+    color: #212842;
+    text-decoration: none;
+    margin-bottom: 2px;
+    margin-left: 2vw;
+    font-size: 120%;
+}
+
 #profile-summary {
     display: flex;
     flex-direction: column;
