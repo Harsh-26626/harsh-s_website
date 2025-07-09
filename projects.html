@@ -239,7 +239,7 @@
                     box.style.transform = "scale(1.1, 1)";
                     box.style.width = "80vw";
                     box.style.height = "fit-content";
-                    window.location.hash = "#projects";
+                    window.location.hash = "#header";
                 }
             });
             document.getElementById("projectbox").style.justifyContent = "center";
@@ -300,6 +300,7 @@
             setTimeout(function() {
                 boxstate = 0;
             }, 1000);
+            window.location.hash = "";
         }
 
         // Working of Header
