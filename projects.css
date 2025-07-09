@@ -16,7 +16,7 @@ body {
     height: 9vh;
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.085);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     margin: none;
